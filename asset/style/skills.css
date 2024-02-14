@@ -1,0 +1,40 @@
+.competence {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+
+.competence svg {
+    width: 50px;
+    height: auto;
+}
+
+.competences-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.competence {
+    flex: 1 1 200px;
+    max-width: 200px;
+}
+
+.competence i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.competence .svg {
+    size: 50px;
+    fill: var(--accent-color);
+}
+
+.competence span {
+    font-size: 1rem;
+    display: block;
+}

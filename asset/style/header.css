@@ -1,0 +1,123 @@
+#header {
+    background-color: var(--background-color)05;
+    box-shadow: 0px 2px 5px var(--shadow-color);
+    color: var(--text-color);
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 94vw;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    margin-top: -90px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.burger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    margin-left: auto;
+}
+
+.burger-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul li {
+    line-height: 1.5;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+    .burger-btn {
+        display: block;
+        z-index: 1002;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--background-color);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 2px 5px var(--shadow-color);
+        padding: 20px;
+        border-radius: 10px;
+        position: absolute;
+        right: 0;
+        z-index: 1001;
+        overflow: hidden;
+    }
+    
+    nav.open ul {
+        display: flex;
+        animation: fadeIn 0.5s ease forwards;
+    }
+    
+    nav.open ul li {
+        opacity: 0;
+        animation: fadeIn 0.5s ease forwards;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .burger-line {
+        width: 24px;
+        height: 2px;
+        background-color: var(--text-color);
+        transition: transform 0.3s ease;
+    }
+
+    .burger-btn.open .burger-line:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .burger-btn.open .burger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-btn.open .burger-line:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+}

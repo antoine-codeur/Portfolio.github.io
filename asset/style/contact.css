@@ -1,0 +1,39 @@
+#contact {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info div {
+    margin-right: 20px;
+}
+
+.contact-info i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--accent-color);
+}

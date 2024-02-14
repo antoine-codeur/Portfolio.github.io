@@ -1,0 +1,20 @@
+#parcours-content,
+#loisirsCode,
+#temoignagesCode {
+    max-width: 80vw; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color); 
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+#parcours-content:hover,
+#loisirsCode:hover,
+#temoignagesCode:hover {
+    box-shadow: 0 0 10px var(--shadow-color); 
+}
+
+#about h3 {
+    margin-left: 10vw;
+}

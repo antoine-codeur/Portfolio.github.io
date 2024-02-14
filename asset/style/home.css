@@ -1,0 +1,10 @@
+#accueil {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+#accueil p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
