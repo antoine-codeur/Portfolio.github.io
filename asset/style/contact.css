@@ -16,7 +16,9 @@
 
 .contact-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
 }
 
 .contact-info div {
@@ -36,4 +38,24 @@
 
 .contact-info a:hover {
     color: var(--accent-color);
+}
+
+.contacter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contacter i {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.contacter .svg {
+    size: 25px;
+    fill: var(--accent-color);
+}
+.contacter .svgIn {
+    fill: var(--text-color);
 }
