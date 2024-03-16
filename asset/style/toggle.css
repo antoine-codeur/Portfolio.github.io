@@ -42,10 +42,12 @@
 }
 
 .dark-mode-toggle input:checked + label {
-    background-color: var(--accent-color);
+    background-color: var(--text-color);
+
 }
 
 .dark-mode-toggle input:checked + label:after {
     transform: translateX(20px);
-    background-color: var(--text-color);
+    background-color: var(--accent-color);
+
 }
