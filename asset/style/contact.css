@@ -49,13 +49,15 @@
 .contacter i {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--accent-color);
+    color: var(--text-color);
 }
 
 .contacter .svg {
     size: 25px;
-    fill: var(--accent-color);
+    fill: var(--text-color);
+
 }
 .contacter .svgIn {
-    fill: var(--text-color);
+    fill: var(--accent-color);
+
 }
